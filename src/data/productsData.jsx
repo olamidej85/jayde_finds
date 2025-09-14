@@ -1,102 +1,138 @@
 const productsData = [
   {
     id: 1,
-    name: 'BLUEY TWO PIECE',
+    name: 'SILK PIECE',
     price: '₦5,000.00',
     image: 'images/silka.avif',
     description: 'High-quality and stylish nightwear. Perfect for comfort and fashion.',
-    stock: true
+    stock: true,
+    category: "Silk", 
+    colors: ["Blue", "grey", "Black"],
+     sizes: ['S', 'M', 'L', 'XL'] 
   },
   {
     id: 2,
-    name: 'NIGHT GOWN',
+    name: 'LOUNGE WEAR',
     price: '₦4,000.00',
     image: 'images/silkb.avif',
     description: 'High-quality and stylish nightwear. Perfect for comfort and fashion.',
-    stock: true
+    stock: true,
+    category: "Cotton", 
+    colors: ["Red", "Pink"],
+     sizes: ['S', 'M', 'L', 'XL'] 
   },
   {
     id: 3,
-    name: 'SEXY TWO PIECE GOWN',
+    name: 'SILK GOWN',
     price: '₦6,500.00',
     image: 'images/silkc.avif',
     description: 'High-quality and stylish nightwear. Perfect for comfort and fashion.',
-    stock: true
+    stock: true,
+    category: "Silk", 
+    colors: ["Black", "Gold"],
+     sizes: ['S', 'M', 'L', 'XL'] 
   },
- 
   {
     id: 5,
-    name: 'STRAIGHT GOWN',
+    name: 'LOUNGE WEAR',
     price: '₦4,500.00',
     image: 'images/silkd.jpg',
     description: 'High-quality and stylish nightwear. Perfect for comfort and fashion.',
-    stock: true
+    stock: true,
+    category: "Cotton", 
+    colors: ["Green", "nude"],
+     sizes: ['S', 'M', 'L', 'XL'] 
   },
   {
     id: 6,
-    name: 'TEDDY BLACK GOWN',
+    name: 'LOUNGE WEAR',
     price: '₦5,000.00',
     image: 'images/silke.jpg',
     description: 'High-quality and stylish nightwear. Perfect for comfort and fashion.',
-    stock: true
+    stock: true,
+    category: "Cotton", 
+    colors: ["Black"],
+     sizes: ['S', 'M', 'L', 'XL'] 
   },
   {
     id: 7,
-    name: 'BLACK TWO PIECE',
+    name: 'JOGGERS PIECE',
     price: '₦5,000.00',
     image: 'images/silkf.jpg',
     description: 'High-quality and stylish nightwear. Perfect for comfort and fashion.',
-    stock: true
+    stock: true,
+    category: "Cotton", 
+    colors: ["Black", "Red"],
+     sizes: ['S', 'M', 'L', 'XL'] 
   },
   {
     id: 8,
-    name: 'BEACH GOWN',
+    name: 'LOUNGE WEAR',
     price: '₦5,000.00',
     image: 'images/silkg.jpg',
     description: 'High-quality and stylish nightwear. Perfect for comfort and fashion.',
-    stock: true
+    stock: true,
+    category: "Cotton", 
+    colors: ["Blue", "Yellow"],
+     sizes: ['S', 'M', 'L', 'XL'] 
   },
   {
     id: 9,
-    name: 'CUTE NIGHT GOWN',
+    name: 'BLACK SILK',
     price: '₦5,000.00',
     image: 'images/silkh.jpg',
     description: 'High-quality and stylish nightwear. Perfect for comfort and fashion.',
-    stock: true
+    stock: true,
+    category: "Silk", 
+    colors: ["Pink", "Purple"],
+     sizes: ['S', 'M', 'L', 'XL'] 
   },
   {
     id: 10,
-    name: 'SHORT TWO PIECE',
+    name: 'FAMILY SET',
     price: '₦5,000.00',
     image: 'images/silki.jpg',
     description: 'High-quality and stylish nightwear. Perfect for comfort and fashion.',
-    stock: true
+    stock: true,
+     category: "Cotton", 
+    colors: ["Black", "yellow"],
+     sizes: ['S', 'M', 'L', 'XL'] 
   },
   {
     id: 11,
-    name: 'SEXY BLACK TWO PIECE',
+    name: 'PREGGY SET',
     price: '₦6,500.00',
     image: 'images/silkj.jpg',
     description: 'High-quality and stylish nightwear. Perfect for comfort and fashion.',
-    stock: true
+    stock: true,
+     category: "Cotton", 
+    colors: ["Black"],
+     sizes: ['S', 'M', 'L', 'XL'] 
   },
   {
     id: 12,
-    name: 'SINGLET TWO PIECE',
+    name: 'NET GOWN',
     price: '₦4,500.00',
     image: 'images/silkk.jpg',
     description: 'High-quality and stylish nightwear. Perfect for comfort and fashion.',
-    stock: true
+    stock: true,
+     category: "Net", 
+    colors: ["grey", "Blue"],
+     sizes: ['S', 'M', 'L', 'XL'] 
   },
   {
     id: 13,
-    name: 'PINK SHIRT GOWN',
+    name: 'BLUE SILK GOWN',
     price: '₦5,000.00',
     image: 'images/silkl.jpg',
     description: 'High-quality and stylish nightwear. Perfect for comfort and fashion.',
-    stock: true
+    stock: true,
+     category: "Silk", 
+    colors: ["Pink"],
+     sizes: ['S', 'M', 'L', 'XL'] 
+     
   },
- 
+  
 ];
 
 export default productsData;

@@ -1,34 +1,62 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useEffect } from "react";
 
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState([]);
+   const [cartItems, setCartItems] = useState(() => {
+    const savedCart = localStorage.getItem("cartItems");
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
 
-  const addToCart = (product, quantity, color) => {
+  useEffect(() => {
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  }, [cartItems]);
+
+ const addToCart = (product, quantity, color, sizes) => {
     setCartItems((prev) => {
-      const existingItem = prev.find(
-        (item) => item.id === product.id && item.color === color
+      const existingItemIndex = prev.findIndex(
+        (item) => item.id === product.id && item.color === color && item.sizes === sizes
       );
-      if (existingItem) {
-        return prev.map((item) =>
-          item.id === product.id && item.color === color
-            ? { ...item, quantity: item.quantity + quantity }
-            : item
-        );
+
+      if (existingItemIndex >= 0) {
+       const updatedCart = [...prev];
+        updatedCart[existingItemIndex].quantity += quantity;
+        return updatedCart;
+      } else {
+        return [
+          ...prev,
+          {
+            ...product,
+            quantity,
+            color,
+            sizes,
+          },
+        ];
       }
-      return [...prev, { ...product, quantity, color }];
     });
   };
 
-  const removeFromCart = (id, color) => {
+  const removeFromCart = (id, color, sizes) => {
     setCartItems((prev) =>
-      prev.filter((item) => !(item.id === id && item.color === color))
+      prev.filter(
+        (item) => !(item.id === id && item.color === color && item.sizes === sizes)
+      )
     );
   };
+ const updateQuantity = (id, color, sizes, newQuantity) => {
+    if (newQuantity < 1) return; 
+    setCartItems((prev) =>
+      prev.map((item) =>
+        item.id === id && item.color === color && item.sizes === sizes
+          ? { ...item, quantity: newQuantity }
+          : item
+      )
+    );
+  };
+ const clearCart = () => setCartItems([]);
 
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart }}>
+    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, updateQuantity, clearCart }}>
       {children}
     </CartContext.Provider>
   );

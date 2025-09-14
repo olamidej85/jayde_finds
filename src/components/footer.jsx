@@ -14,9 +14,9 @@ const Footer = () => {
             We are a contemporary fashion brand that specialises entirely in serving
             our lovers with beautiful, neat yet affordable thrifted clothes, and more.
           </p>
-          <span><i className="fa-solid fa-location-dot"></i> Bashorun, Ibadan</span><br />
-          <span><i className="fa-solid fa-phone"></i> <a href="tel:+2347080718756">07080718756</a></span><br />
-          <span><i className="fa-solid fa-envelope"></i> <a href="mailto:olamidejayde@gmail.com">olamidejayde@gmail.com</a></span><br />
+          <span><i className="fa-solid fa-location-dot"></i> Bashorun, Ibadan</span>
+          <span><i className="fa-solid fa-phone"></i> <a href="tel:+2347080718756">07080718756</a></span>
+          <span><i className="fa-solid fa-envelope"></i> <a href="mailto:olamidejayde@gmail.com">olamidejayde@gmail.com</a></span>
           <span><i className="fa-solid fa-clock"></i> Mon-Sat / 9:00 AM - 5:00 PM</span>
         </div>
 
@@ -39,7 +39,7 @@ const Footer = () => {
           <h4>STAY CONNECTED</h4>
           <a href="https://www.instagram.com/jayde_finds" target="_blank" rel="noopener noreferrer" title="Instagram">
             <i className="fa-brands fa-square-instagram"></i>
-          </a>
+          </a> 
           <a href="https://www.tiktok.com/@jayde_finds" target="_blank" rel="noopener noreferrer" title="TikTok">
             <i className="fa-brands fa-tiktok"></i>
           </a>
