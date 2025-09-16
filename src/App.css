@@ -731,22 +731,9 @@ padding-left: 10px;
   max-width: auto;
   height: 60%;
 }
- 
-.product .name{
-  margin-left: 10%;
-  font-weight: 600;
-}
-.product p{
-  margin-left: 10%;
-}
 .options{
   margin-left: 10%;
- font-size: 16px;
- padding: 5px 7px;
- background-color: rgb(172, 163, 163);
- border: none;
- border-radius: 6px;
-margin-bottom: 30%;
-margin-top: -20%;
+ font-size: 12px;
+margin-bottom: 10%;
 }
 }
