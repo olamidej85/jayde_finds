@@ -199,7 +199,6 @@ footer a {
   display: block;
   margin: 0 auto;
   border-radius: 7px;
-
 }
  
 .product .name{
@@ -730,6 +729,7 @@ padding-left: 10px;
 .row img{
   max-width: auto;
   height: 60%;
+margin-top: -3%;
 }
 .options{
   margin-left: 10%;
