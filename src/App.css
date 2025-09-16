@@ -326,7 +326,7 @@ margin-top: -20%;
 }
 
 .product-info .price {
-  font-size: 30px;
+  font-size: 0px;
   color: #111;
   margin-bottom: 15px;
 }
@@ -615,7 +615,7 @@ margin-right: 15px;}
 
 .product-image img {
   width: 350px;
-  height: auto;
+  height: 300px;
   }
 .product-info h1 {
   font-size: 20px;
@@ -723,4 +723,30 @@ padding-left: 10px;
     text-align: right;
     margin-bottom: 5px;
   }
+  .all-product{
+  margin-top: 5%;
+  
+}
+.row img{
+  max-width: auto;
+  height: 60%;
+}
+ 
+.product .name{
+  margin-left: 10%;
+  font-weight: 600;
+}
+.product p{
+  margin-left: 10%;
+}
+.options{
+  margin-left: 10%;
+ font-size: 16px;
+ padding: 5px 7px;
+ background-color: rgb(172, 163, 163);
+ border: none;
+ border-radius: 6px;
+margin-bottom: 30%;
+margin-top: -20%;
+}
 }
