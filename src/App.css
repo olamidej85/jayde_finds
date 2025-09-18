@@ -728,7 +728,7 @@ padding-left: 10px;
 }
 .row img{
   max-width: auto;
-  height: 60px;
+  height: auto;
 margin-top: -3%;
 }
 .options{
