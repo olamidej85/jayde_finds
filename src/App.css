@@ -614,7 +614,7 @@ margin-right: 15px;}
 
 .product-image img {
   width: 350px;
-  height: 300px;
+  height: auto;
   }
 .product-info h1 {
   font-size: 20px;
@@ -728,7 +728,7 @@ padding-left: 10px;
 }
 .row img{
   max-width: auto;
-  height: 60%;
+  height: 60px;
 margin-top: -3%;
 }
 .options{
